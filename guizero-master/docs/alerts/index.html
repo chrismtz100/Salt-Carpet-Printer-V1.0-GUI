@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Alerts - guizero</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Alerts";
+    var mkdocs_page_input_path = "alerts.md";
+    var mkdocs_page_url = "/alerts/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../about/" class="icon icon-home"> guizero</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../about/">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Installation</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Using guizero</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../start/">Getting started</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../commands/">Commands</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../multiple_windows/">Multiple windows</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../layout/">Layouts</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Alerts</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#alerts">Alerts</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#using-alerts">Using alerts</a></li>
+        
+            <li><a class="toctree-l4" href="#purpose">Purpose</a></li>
+        
+            <li><a class="toctree-l4" href="#examples">Examples</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../size/">Sizes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../colors/">Colors</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../images/">Images</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../blocking/">Loops and sleeping</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../events/">Events</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../usingtk/">Using tkinter methods</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../gettinghelp/">Getting help</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../recipes/">Recipes</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Widgets</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../app/">App</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../box/">Box</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../buttongroup/">ButtonGroup</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../checkbox/">CheckBox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../combo/">Combo</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../listbox/">ListBox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../menubar/">MenuBar</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../picture/">Picture</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../pushbutton/">PushButton</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../slider/">Slider</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../text/">Text</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../textbox/">TextBox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../waffle/">Waffle</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../window/">Window</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Contributing</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../contributing/">Notes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../development/">Developing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../deployment/">Deploying</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../changelog/">Change log</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../about/">guizero</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../about/">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Using guizero &raquo;</li>
+        
+      
+    
+    <li>Alerts</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="alerts">Alerts</h1>
+<p>Alerts are pop-up windows which can be used to interupt the user by asking question or providing information.</p>
+<p><img alt="Alert popup" src="../images/alert_info_windows.png" /></p>
+<h3 id="using-alerts">Using alerts</h3>
+<p>To use the alerts you will need to import each one individually at the start of your program. For example:</p>
+<pre><code class="python">from guizero import warn, info
+</code></pre>
+
+<h3 id="purpose">Purpose</h3>
+<p>These functions pop up a box on the screen that displays a message. The functions available are:</p>
+<ul>
+<li><code>warn(title, text)</code> - popup box with a warning icon</li>
+<li><code>info(title, text)</code> - popup box with an information icon</li>
+<li><code>error(title, text)</code> - popup box with an error icon</li>
+<li><code>yesno(title, text)</code> - popup box with yes and no options. Pressing <code>Yes</code> returns <code>True</code> and pressing <code>No</code> returns <code>False</code>.</li>
+</ul>
+<p>All pop up boxes use the native display, so they will look different depending on your operating system.</p>
+<h3 id="examples">Examples</h3>
+<p><strong>Warning box</strong></p>
+<p>This will pop up a warning box with the title <code>"Uh oh!"</code> and the message <code>"You are almost out of biscuits!"</code>.</p>
+<pre><code class="python">from guizero import App, warn
+app = App(title=&quot;Biscuit monitor&quot;)
+warn(&quot;Uh oh!&quot;, &quot;You are almost out of biscuits!&quot;)
+app.display()
+</code></pre>
+
+<p>On Windows, the box looks like this:</p>
+<p><img alt="Warning popup" src="../images/warning_windows.png" /></p>
+<p>The <code>info</code> and <code>error</code> boxes work in exactly the same way but will display different icons.</p>
+<p><strong>Yes/No box</strong></p>
+<p>When this function is called it returns a <strong>boolean</strong> value.</p>
+<ul>
+<li>If <code>Yes</code> was pressed, return <code>True</code></li>
+<li>If <code>No</code> was pressed, return <code>False</code></li>
+</ul>
+<p>You can store this value in a variable and test it:</p>
+<pre><code class="python">from guizero import App, yesno, info, error
+app = App(title=&quot;Snowman&quot;)
+build_a_snowman = yesno(&quot;A question...&quot;, &quot;Do you want to build a snowman?&quot;)
+if build_a_snowman == True:
+    info(&quot;Snowman&quot;, &quot;It doesn't have to be a snowman&quot;)
+else:
+    error(&quot;Snowman&quot;, &quot;Okay bye...&quot;)
+app.display()
+</code></pre>
+
+<p>This code will first display the yes/no box</p>
+<p><img alt="Yes No popup" src="../images/yesno_windows.png" /></p>
+<p>If <code>Yes</code> is pressed, an information box will be displayed:</p>
+<p><img alt="Info popup" src="../images/info_windows.png" /></p>
+<p>If <code>No</code> is pressed, an error box will be displayed</p>
+<p><img alt="Info popup" src="../images/error_windows.png" /></p>
+<p><strong>Example: Using an alert as a callback</strong></p>
+<p>You can also use these functions in a <em>callback</em> (when you have to provide a function for another widget to call). Here is an example with a <code>PushButton</code> which pops up an <code>info</code> box when it is pressed.</p>
+<pre><code class="python">from guizero import App, PushButton, info
+app = App()
+button = PushButton(app, command=info, args=[&quot;Info&quot;, &quot;You pressed the button&quot;])
+app.display()
+</code></pre>
+
+<p>The arguments provided to the <code>PushButton</code> are:</p>
+<ul>
+<li>Where the button should be created (within the <code>app</code>)</li>
+<li>The name of the function to call when pressed (<code>info</code>)</li>
+<li>A list of the arguments to the function you are calling (values for the <code>title</code> and <code>message</code> arguments for the <code>info</code> function)</li>
+</ul>
+<p><strong>Example: Do you really want to close?</strong></p>
+<p>You can use a <code>yesno</code> box to check whether someone really wants to exit your app. If they click yes, the app is closed, if not, nothing happens and they can continue with what they were doing.</p>
+<pre><code class="python">from guizero import App, Text, yesno
+
+# Ask the user if they really want to close the window
+def do_this_on_close():
+    if yesno(&quot;Close&quot;, &quot;Do you want to quit?&quot;):
+        app.destroy()
+
+app = App()
+
+title = Text(app, text=&quot;blank app&quot;)
+
+# When the user tries to close the window, run the function do_this_on_close()
+app.on_close(do_this_on_close)
+
+app.display()
+
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../size/" class="btn btn-neutral float-right" title="Sizes">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../layout/" class="btn btn-neutral" title="Layouts"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../layout/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../size/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>

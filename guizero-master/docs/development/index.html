@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Developing - guizero</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Developing";
+    var mkdocs_page_input_path = "development.md";
+    var mkdocs_page_url = "/development/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../about/" class="icon icon-home"> guizero</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../about/">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Installation</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Using guizero</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../start/">Getting started</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../commands/">Commands</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../multiple_windows/">Multiple windows</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../layout/">Layouts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../alerts/">Alerts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../size/">Sizes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../colors/">Colors</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../images/">Images</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../blocking/">Loops and sleeping</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../events/">Events</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../usingtk/">Using tkinter methods</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../gettinghelp/">Getting help</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../recipes/">Recipes</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Widgets</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../app/">App</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../box/">Box</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../buttongroup/">ButtonGroup</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../checkbox/">CheckBox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../combo/">Combo</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../listbox/">ListBox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../menubar/">MenuBar</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../picture/">Picture</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../pushbutton/">PushButton</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../slider/">Slider</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../text/">Text</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../textbox/">TextBox</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../waffle/">Waffle</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../window/">Window</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Contributing</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../contributing/">Notes</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Developing</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#development">Development</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#setup">Setup</a></li>
+        
+            <li><a class="toctree-l4" href="#python-library">Python library</a></li>
+        
+            <li><a class="toctree-l4" href="#tests">Tests</a></li>
+        
+            <li><a class="toctree-l4" href="#documents">Documents</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../deployment/">Deploying</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../changelog/">Change log</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../about/">guizero</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../about/">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Contributing &raquo;</li>
+        
+      
+    
+    <li>Developing</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="development">Development</h1>
+<p>Notes on how to develop guizero (on Windows).</p>
+<h2 id="setup">Setup</h2>
+<p>Upgrade pip:</p>
+<pre><code>python.exe -m pip install pip --upgrade
+</code></pre>
+
+<p>Install / upgrade pre-requisites:</p>
+<pre><code>pip install mkdocs wheel twine virtualenv pytest pillow --upgrade
+</code></pre>
+
+<h2 id="python-library">Python library</h2>
+<p>Create a virtual environment (not essential, but a good idea!):</p>
+<pre><code>virtualenv guizero-[versionno]
+cd guizero-[versionno]
+</code></pre>
+
+<p>Activate your virtual environment:</p>
+<pre><code>Scripts\activate
+</code></pre>
+
+<p>Checkout and install guizero for development:</p>
+<pre><code>git clone https://github.com/lawsie/guizero
+cd guizero
+git checkout dev
+python setup.py develop
+</code></pre>
+
+<p>When you have finished your development, deactivate your virtual environment:</p>
+<pre><code>Scripts\deactivate
+</code></pre>
+
+<h2 id="tests">Tests</h2>
+<p>To run the automated tests:</p>
+<pre><code>cd guizero\test
+pytest -v 
+</code></pre>
+
+<p>If running the tests inside a virtual environment you will need to install pytest in that virtual enviroment.</p>
+<pre><code>pip install pytest
+</code></pre>
+
+<p><em>Note - tkinter can error when running the tests usually when the interpreter doesn't start properly, it doesnt seem to like being initialised and destroyed hundreds of times, I suspect a file locking issue as you dont see the problem on Linux. So sometimes you might get a test fail with an error like <code>This probably means that tk wasn't installed properly.</code>. Just re-run the last failed errors! <code>pytest --lf -v</code></em></p>
+<h2 id="documents">Documents</h2>
+<p>Test documents by serving up MkDocs:</p>
+<pre><code>cd guizero\docs-src
+mkdocs serve
+</code></pre>
+
+<p>Open <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> </p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../deployment/" class="btn btn-neutral float-right" title="Deploying">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../contributing/" class="btn btn-neutral" title="Notes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../contributing/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../deployment/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>
